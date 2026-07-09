@@ -1,5 +1,9 @@
 ---
+import { getCollection, getEntry } from 'astro:content';
 
+const experiences = await getCollection('experiences');
+const first = experiences[0];
+const company = await getEntry(first.data.companyId);
 ---
 
 <html lang="en">
@@ -13,5 +17,6 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+		<p>{first.data.languages.en.role} @ {company.data.name}</p>
 	</body>
 </html>

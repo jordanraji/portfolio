@@ -1,0 +1,2167 @@
+{
+  "$schemaVersion": "1.0.0",
+  "profile": {
+    "name": "Jordan Raji Lazo Cahua",
+    "title": "Senior Backend Engineer | Data Engineer",
+    "contact": {
+      "email": "jordan.lazo@ucsp.edu.pe",
+      "phone": "+51 974 791 943",
+      "location": "Arequipa, Peru 04009",
+      "github": "https://github.com/jordanlazo",
+      "linkedin": "https://linkedin.com/in/jordanlazo"
+    },
+    "education": [
+      {
+        "institution": "The University of Queensland",
+        "degree": "M.Sc. in Computer Science",
+        "location": "Brisbane, Australia",
+        "dateStart": "2025-07",
+        "dateEnd": "2026-12"
+      },
+      {
+        "institution": "Universidad Continental",
+        "degree": "Gr. Data Analytics",
+        "location": "Lima, Peru",
+        "dateStart": "2020",
+        "dateEnd": "2021"
+      },
+      {
+        "institution": "Universidad Nacional Agraria La Molina",
+        "degree": "Gr. Data Science, Machine Learning and Deep Learning",
+        "location": "Lima, Peru",
+        "dateStart": "2020",
+        "dateEnd": "2021"
+      },
+      {
+        "institution": "Universidad Católica San Pablo",
+        "degree": "GrDip. Data Science",
+        "location": "Arequipa, Peru",
+        "dateStart": "2019",
+        "dateEnd": "2020"
+      },
+      {
+        "institution": "Universidad Católica San Pablo",
+        "degree": "B.Sc. Computer Science",
+        "location": "Arequipa, Peru",
+        "dateStart": "2013",
+        "dateEnd": "2018"
+      }
+    ],
+    "languagesSpoken": [
+      {
+        "language": "Spanish",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "C1"
+      }
+    ],
+    "languages": {
+      "en": {
+        "summary": "Senior Backend Engineer specialized in Python, FastAPI, event-driven architectures, and AWS cloud solutions. Passionate about building robust, scalable, and high-performance microservices, data pipelines, and distributed systems."
+      },
+      "es": {
+        "summary": "Ingeniero de Backend Senior especializado en Python, FastAPI, arquitecturas orientadas a eventos y soluciones en la nube AWS. Apasionado por construir microservicios robustos, escalables y de alto rendimiento, tuberías de datos y sistemas distribuidos."
+      }
+    }
+  },
+  "companies": [
+    {
+      "id": "cmp-nearsure",
+      "name": "Nearsure",
+      "url": "https://nearsure.com",
+      "location": "Montevideo, Uruguay"
+    },
+    {
+      "id": "cmp-sinaptica",
+      "name": "Sináptica",
+      "url": "https://sinaptica.ec",
+      "location": "Cuenca, Ecuador"
+    },
+    {
+      "id": "cmp-modobeta",
+      "name": "Modo Beta",
+      "url": "https://modobeta.com",
+      "location": "Lima, Peru"
+    },
+    {
+      "id": "cmp-smartbizloans",
+      "name": "SmartBizLoans",
+      "url": "https://www.smartbizloans.com",
+      "location": "USA"
+    },
+    {
+      "id": "cmp-ideascloud",
+      "name": "IdeasCloud",
+      "url": "https://ideascloud.io",
+      "location": "Lima, Peru"
+    },
+    {
+      "id": "cmp-arspectra",
+      "name": "ARSPECTRA",
+      "url": "https://www.arspectra.com",
+      "location": "Luxembourg"
+    },
+    {
+      "id": "cmp-concytec",
+      "name": "CONCYTEC",
+      "url": "https://portal.concytec.gob.pe",
+      "location": "Lima, Peru"
+    },
+    {
+      "id": "cmp-unheval",
+      "name": "Universidad Hermilio Valdizán",
+      "url": "https://www.unheval.edu.pe",
+      "location": "Huanuco, Peru"
+    },
+    {
+      "id": "cmp-ac-transparencia",
+      "name": "Asociación Civil Transparencia",
+      "url": "https://transparencia.org.pe",
+      "location": "Lima, Peru"
+    },
+    {
+      "id": "cmp-bordoai",
+      "name": "BordoAI",
+      "url": "https://bordo.ai",
+      "location": "USA"
+    },
+    {
+      "id": "cmp-mapsalud",
+      "name": "MapSalud",
+      "url": "https://mapsalud.com",
+      "location": "Lima, Peru"
+    },
+    {
+      "id": "cmp-mentes-visionarias",
+      "name": "Mentes Visionarias",
+      "url": "https://mentesvisionarias.com",
+      "location": "Arequipa, Peru"
+    },
+    {
+      "id": "cmp-coddde-labs",
+      "name": "Coddde Labs",
+      "url": "https://coddde.com",
+      "location": "Miami, USA"
+    },
+    {
+      "id": "cmp-tecsup",
+      "name": "Instituto de Educación Superior en Perú TECSUP",
+      "url": "https://www.tecsup.edu.pe",
+      "location": "Lima, Peru"
+    },
+    {
+      "id": "cmp-indecso-ucsp",
+      "name": "INDECSO - UCSP",
+      "url": "https://ucsp.edu.pe",
+      "location": "Arequipa, Peru"
+    },
+    {
+      "id": "cmp-uq",
+      "name": "The University of Queensland",
+      "url": "https://www.uq.edu.au",
+      "location": "Brisbane, Australia"
+    },
+    {
+      "id": "cmp-silabuz",
+      "name": "Aprendizaje Digital - Silabuz",
+      "url": "https://silabuz.com",
+      "location": "Lima, Peru"
+    },
+    {
+      "id": "cmp-clickit-tech",
+      "name": "ClickIt Tech",
+      "url": "https://www.clickittech.com",
+      "location": "Saltillo, Mexico"
+    },
+    {
+      "id": "cmp-channelmix",
+      "name": "ChannelMix",
+      "url": "https://channelmix.com",
+      "location": "USA"
+    },
+    {
+      "id": "cmp-ucsp",
+      "name": "Universidad Católica San Pablo",
+      "url": "https://ucsp.edu.pe",
+      "location": "Arequipa, Peru"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp-sinaptica",
+      "companyId": "cmp-sinaptica",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "php",
+        "mysql",
+        "internship"
+      ],
+      "relatedSkills": [
+        "skl-php",
+        "skl-mysql",
+        "skl-cockroachdb",
+        "skl-javascript",
+        "skl-docker"
+      ],
+      "metadata": {
+        "dateStart": "2018-01",
+        "dateEnd": "2018-03"
+      },
+      "languages": {
+        "en": {
+          "role": "Intern",
+          "summary": "Assisted in web development and security algorithm implementation.",
+          "achievements": [
+            {
+              "text": "Assisted in design and maintenance the web platform.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Contributed to implementation of encryption algorithms (RSA and AES) and digital envelope.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "role": "Pasante",
+          "summary": "Asistió en el desarrollo web y la implementación de algoritmos de seguridad.",
+          "achievements": [
+            {
+              "text": "Asistió en el diseño y mantenimiento de la plataforma web.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Contribuyó a la implementación de algoritmos de cifrado (RSA y AES) y sobre digital.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "exp-indecso-ucsp",
+      "companyId": "cmp-indecso-ucsp",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "php",
+        "laravel",
+        "vue",
+        "gis"
+      ],
+      "relatedSkills": [
+        "skl-php",
+        "skl-laravel",
+        "skl-postgresql",
+        "skl-postgis",
+        "skl-mongodb",
+        "skl-javascript",
+        "skl-vuejs",
+        "skl-aws-s3",
+        "skl-docker"
+      ],
+      "metadata": {
+        "dateStart": "2019-03",
+        "dateEnd": "2019-07"
+      },
+      "languages": {
+        "en": {
+          "role": "Developer - Analyst",
+          "summary": "Developed a GIS web platform for water resource optimization.",
+          "achievements": [
+            {
+              "text": "Developed a web platform for optimization of water use commissioned by a Peruvian state entity and a mining company.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Managed geographic information of fields in the Chili Basin and stored it in PostGIS.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Participated in implementation of predictive models of water use.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "role": "Desarrollador - Analista",
+          "summary": "Desarrolló una plataforma web GIS para la optimización de recursos hídricos.",
+          "achievements": [
+            {
+              "text": "Desarrolló una plataforma web para la optimización del uso del agua encargada por una entidad estatal peruana y una empresa minera.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Gestionó información geográfica de campos en la Cuenca del Chili y la almacenó en PostGIS.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Participó en la implementación de modelos predictivos de uso del agua.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "exp-clickit-tech",
+      "companyId": "cmp-clickit-tech",
+      "clientId": "cmp-channelmix",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "python",
+        "etl",
+        "data-engineering"
+      ],
+      "relatedSkills": [
+        "skl-python",
+        "skl-flask",
+        "skl-postgresql",
+        "skl-sqlalchemy",
+        "skl-dynamodb",
+        "skl-redshift",
+        "skl-aws-s3",
+        "skl-aws-lambda",
+        "skl-aws-rds",
+        "skl-docker",
+        "skl-javascript",
+        "skl-reactjs",
+        "skl-pandas",
+        "skl-dask",
+        "skl-spark",
+        "skl-numpy"
+      ],
+      "metadata": {
+        "dateStart": "2021-10",
+        "dateEnd": "2022-10"
+      },
+      "languages": {
+        "en": {
+          "role": "Python Developer",
+          "summary": "Implemented ETL pipelines and data extractors for ChannelMix data platform.",
+          "achievements": [
+            {
+              "text": "Engineered high-performance ETL pipelines using Flask, Pandas, and Dask to ingest, clean, and consolidate marketing data from multiple third-party APIs.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Developed custom object-oriented data extractors with advanced error-recovery and retry logic, reducing data ingestion failure rates by ~15%.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Responsible for comprehensive data cleaning, sanitization, and normalization processes.",
+              "categories": [
+                "data"
+              ]
+            },
+            {
+              "text": "Maintained and optimized web service APIs critical to the platform's functionality.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Refactored core API infrastructure to adhere to JSON API standards, improving response times through database index optimization on Redshift and PostgreSQL.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "role": "Desarrollador Python",
+          "summary": "Implementó tuberías ETL y extractores de datos para la plataforma ChannelMix.",
+          "achievements": [
+            {
+              "text": "Diseñó tuberías ETL de alto rendimiento utilizando Flask, Pandas y Dask para ingerir, limpiar y consolidar datos de marketing de múltiples APIs de terceros.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Desarrolló extractores de datos personalizados orientados a objetos con lógica avanzada de recuperación de errores y reintentos, reduciendo las tasas de fallo de ingesta de datos en aproximadamente un 15%.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Responsable de procesos integrales de limpieza, sanitización y normalización de datos.",
+              "categories": [
+                "data"
+              ]
+            },
+            {
+              "text": "Mantuvo y optimizó APIs de servicios web críticas para la funcionalidad de la plataforma.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Refactorizó la infraestructura central de APIs para cumplir con los estándares JSON API, mejorando los tiempos de respuesta mediante la optimización de índices de bases de datos en Redshift y PostgreSQL.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "exp-coddde-labs",
+      "companyId": "cmp-coddde-labs",
+      "clientId": "cmp-smartbizloans",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "python",
+        "backend",
+        "api-design",
+        "clean-architecture"
+      ],
+      "relatedSkills": [
+        "skl-python",
+        "skl-fastapi",
+        "skl-asyncio",
+        "skl-dynamodb",
+        "skl-mysql",
+        "skl-sqlalchemy",
+        "skl-aws-s3",
+        "skl-aws-lambda",
+        "skl-aws-rds",
+        "skl-docker",
+        "skl-kubernetes",
+        "skl-pytest"
+      ],
+      "metadata": {
+        "dateStart": "2023-01",
+        "dateEnd": "2023-04"
+      },
+      "languages": {
+        "en": {
+          "role": "Python Developer",
+          "summary": "Developed REST APIs and data management services for SmartBizLoans.",
+          "achievements": [
+            {
+              "text": "Designed and structured REST APIs using FastAPI following Hexagonal Architecture and clean code principles, enhancing codebase modularity and ease of maintenance.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Led data migration and ingestion pipeline refactoring for legacy MySQL and DynamoDB systems, successfully migrating 100k+ customer financial profiles with zero downtime.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Maintained and optimized high-traffic financial APIs, reducing latency and resolving memory leak issues under peak production loads.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Collaborated with frontend developers and software developers to resolve defects in services or products.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Worked in a multidisciplinary development team to deliver high-quality features.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "role": "Desarrollador Python",
+          "summary": "Desarrolló APIs REST y servicios de gestión de datos para SmartBizLoans.",
+          "achievements": [
+            {
+              "text": "Diseñó y estructuró APIs REST utilizando FastAPI siguiendo Arquitectura Hexagonal y principios de código limpio, mejorando la modularidad del código y la facilidad de mantenimiento.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Lideró la migración de datos y la refactorización de tuberías de ingesta para sistemas heredados de MySQL y DynamoDB, migrando con éxito más de 100 mil perfiles financieros de clientes con cero tiempo de inactividad.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Mantuvo y optimizó APIs financieras de alto tráfico, reduciendo la latencia y resolviendo problemas de fuga de memoria bajo cargas máximas de producción.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Colaboró con desarrolladores frontend y desarrolladores de software para resolver defectos en servicios o productos.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Trabajó en un equipo de desarrollo multidisciplinario para entregar características de alta calidad.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "exp-modobeta",
+      "companyId": "cmp-modobeta",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "php",
+        "laravel",
+        "backend-development",
+        "fintech"
+      ],
+      "relatedSkills": [
+        "skl-php",
+        "skl-laravel",
+        "skl-python",
+        "skl-flask",
+        "skl-mongodb",
+        "skl-mysql",
+        "skl-sqlalchemy",
+        "skl-aws-s3",
+        "skl-aws-rds",
+        "skl-aws-beanstalk",
+        "skl-docker"
+      ],
+      "metadata": {
+        "dateStart": "2021-05",
+        "dateEnd": "2022-01"
+      },
+      "languages": {
+        "en": {
+          "role": "Backend Developer",
+          "summary": "Led backend development of retail platforms in Peru.",
+          "achievements": [
+            {
+              "text": "Developed core backend modules for Make & Makeful, processing high-volume transactions for major banking and retail enterprises in Peru using PHP (Laravel) and Python (Flask).",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Integrated secure payment gateways and third-party APIs, designing custom OAuth integrations and secure token storage mechanisms.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Optimized MongoDB and MySQL database schemas, remodeling query relationships to increase application loading speed under peak user traffic.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Configured and deployed web services on AWS using ECS, Beanstalk, RDS, and S3, automating deployment steps and reducing setup overhead.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "role": "Desarrollador Backend",
+          "summary": "Dirigió el desarrollo backend de plataformas minoristas en Perú.",
+          "achievements": [
+            {
+              "text": "Desarrolló módulos de backend centrales para Make y Makeful, procesando transacciones de alto volumen para importantes empresas bancarias y minoristas en el Perú utilizando PHP (Laravel) y Python (Flask).",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Integró pasarelas de pago seguras y APIs de terceros, diseñando integraciones OAuth personalizadas y mecanismos seguros de almacenamiento de tokens.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Optimizó esquemas de bases de datos MongoDB y MySQL, remodelando relaciones de consultas para aumentar la velocidad de carga de la aplicación bajo tráfico pico de usuarios.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Configuró y desplegó servicios web en AWS utilizando ECS, Beanstalk, RDS y S3, automatizando los pasos de despliegue y reduciendo la sobrecarga de configuración.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "exp-nearsure",
+      "companyId": "cmp-nearsure",
+      "clientId": "cmp-bordoai",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "backend",
+        "microservices",
+        "event-driven",
+        "llm"
+      ],
+      "relatedSkills": [
+        "skl-python",
+        "skl-fastapi",
+        "skl-asyncio",
+        "skl-numpy",
+        "skl-pandas",
+        "skl-spark",
+        "skl-dynamodb",
+        "skl-postgresql",
+        "skl-sqlalchemy",
+        "skl-langchain",
+        "skl-aws-s3",
+        "skl-aws-lambda",
+        "skl-aws-sqs",
+        "skl-aws-sns",
+        "skl-nats",
+        "skl-docker",
+        "skl-pytest"
+      ],
+      "metadata": {
+        "dateStart": "2023-10",
+        "dateEnd": null
+      },
+      "languages": {
+        "en": {
+          "role": "Backend Developer",
+          "summary": "Building next-generation AI automation and data management tools for BordoAI.",
+          "achievements": [
+            {
+              "text": "Co-designed the microservices architecture and high-performance communication protocols for 5+ production services, implementing asynchronous RESTful APIs with FastAPI and asyncio.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Architected and implemented event-driven microservices using AWS SQS/SNS and NATS, decoupling system components and ensuring reliable, low-latency message delivery.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Optimized SQL database query performance by integrating async drivers with SQLAlchemy (PostgreSQL/DynamoDB), reducing API latency and improving query throughput.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Engineered secure and scalable custom webhook integrations, introducing retry mechanisms and payload signing for 99.9% communication success rates.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Collaborated cross-functionally to integrate Large Language Models (LLMs) and LangChain pipelines, enabling scalable AI-driven automation workflows.",
+              "categories": [
+                "backend",
+                "ai"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "role": "Desarrollador Backend",
+          "summary": "Construyendo herramientas de automatización de IA y gestión de datos de próxima generación para BordoAI.",
+          "achievements": [
+            {
+              "text": "Co-diseñó la arquitectura de microservicios y protocolos de comunicación de alto rendimiento para más de 5 servicios en producción, implementando APIs RESTful asíncronas con FastAPI y asyncio.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Diseñó e implementó microservicios orientados a eventos utilizando AWS SQS/SNS y NATS, desacoplando los componentes del sistema y garantizando una entrega de mensajes confiable y de baja latencia.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Optimizó el rendimiento de las consultas a bases de datos SQL mediante la integración de controladores asíncronos con SQLAlchemy (PostgreSQL/DynamoDB), reduciendo la latencia de la API y mejorando el rendimiento de las consultas.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Desarrolló integraciones de webhooks personalizados seguras y escalables, introduciendo mecanismos de reintento y firma de carga útil para tasas de éxito de comunicación del 99.9%.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Colaboró de manera multifuncional para integrar Modelos de Lenguaje Grande (LLMs) y tuberías de LangChain, habilitando flujos de trabajo de automatización escalables impulsados por IA.",
+              "categories": [
+                "backend",
+                "ai"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "exp-mapsalud",
+      "companyId": "cmp-mapsalud",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "php",
+        "laravel",
+        "vue"
+      ],
+      "relatedSkills": [
+        "skl-php",
+        "skl-laravel",
+        "skl-mysql",
+        "skl-mongodb",
+        "skl-javascript",
+        "skl-vuejs",
+        "skl-aws-s3",
+        "skl-docker"
+      ],
+      "metadata": {
+        "dateStart": "2018-09",
+        "dateEnd": "2019-02"
+      },
+      "languages": {
+        "en": {
+          "role": "Web Developer",
+          "summary": "Built web platforms and REST APIs for retail and banking companies.",
+          "achievements": [
+            {
+              "text": "Developed web platforms for mining, banking and retail companies such as Interbank, Financiera Oh!, Antamina, etc.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Participated in implementation of REST APIs web services.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "role": "Desarrollador Web",
+          "summary": "Construyó plataformas web y APIs REST para empresas comerciales y bancarias.",
+          "achievements": [
+            {
+              "text": "Desarrolló plataformas web para empresas mineras, bancarias y minoristas como Interbank, Financiera Oh!, Antamina, etc.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Participó en la implementación de servicios web REST APIs.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "exp-ideascloud",
+      "companyId": "cmp-ideascloud",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "python",
+        "flask",
+        "vue"
+      ],
+      "relatedSkills": [
+        "skl-python",
+        "skl-flask",
+        "skl-numpy",
+        "skl-pandas",
+        "skl-javascript",
+        "skl-vuejs",
+        "skl-mongodb",
+        "skl-aws-s3"
+      ],
+      "metadata": {
+        "dateStart": "2020-03",
+        "dateEnd": "2020-07"
+      },
+      "languages": {
+        "en": {
+          "role": "Software Developer",
+          "summary": "Built software systems and integrations for retail businesses.",
+          "achievements": [
+            {
+              "text": "Developed a multiple-module system for quality processes requested by a company in the business sector.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Integrated social network APIs to retrieve user information automatically.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "role": "Desarrollador de Software",
+          "summary": "Construyó sistemas de software e integraciones para empresas comerciales.",
+          "achievements": [
+            {
+              "text": "Desarrolló un sistema de múltiples módulos para procesos de calidad solicitado por una empresa del sector comercial.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Integró APIs de redes sociales para recuperar información de usuarios de forma automática.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "exp-mentes-visionarias",
+      "companyId": "cmp-mentes-visionarias",
+      "clientId": "cmp-arspectra",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "unity",
+        "ar",
+        "medical-tech"
+      ],
+      "relatedSkills": [
+        "skl-csharp",
+        "skl-unity",
+        "skl-javascript",
+        "skl-python",
+        "skl-pytorch",
+        "skl-opencv",
+        "skl-docker"
+      ],
+      "metadata": {
+        "dateStart": "2020-05",
+        "dateEnd": "2020-11"
+      },
+      "languages": {
+        "en": {
+          "role": "AR Developer",
+          "summary": "Developed augmented reality POCs for medical technologies.",
+          "achievements": [
+            {
+              "text": "Developed multiple POCs for medical technologies using augmented and virtual reality.",
+              "categories": [
+                "backend",
+                "ai"
+              ]
+            },
+            {
+              "text": "Worked on a software prototype for detection of potential covid-infected individuals.",
+              "categories": [
+                "backend",
+                "ai"
+              ]
+            },
+            {
+              "text": "Performed real-time connection tests of the devices involved.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "role": "Desarrollador de Realidad Aumentada",
+          "summary": "Desarrolló pruebas de concepto de realidad aumentada para tecnologías médicas.",
+          "achievements": [
+            {
+              "text": "Desarrolló múltiples POCs para tecnologías médicas utilizando realidad aumentada y virtual.",
+              "categories": [
+                "backend",
+                "ai"
+              ]
+            },
+            {
+              "text": "Trabajó en un prototipo de software para la detección de personas potencialmente infectadas con covid.",
+              "categories": [
+                "backend",
+                "ai"
+              ]
+            },
+            {
+              "text": "Realizó pruebas de conexión en tiempo real de los dispositivos involucrados.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj-eventnow",
+      "projectType": "academic",
+      "experienceId": null,
+      "clientId": "cmp-uq",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "fastapi",
+        "rest-api",
+        "clean-code",
+        "pytest"
+      ],
+      "relatedSkills": [
+        "skl-python",
+        "skl-fastapi",
+        "skl-postgresql",
+        "skl-docker",
+        "skl-pytest"
+      ],
+      "urlGitHub": "https://github.com/jordanlazo/eventnow",
+      "metadata": {
+        "status": "Completed",
+        "dateStart": "2025-07",
+        "dateEnd": "2025-11"
+      },
+      "languages": {
+        "en": {
+          "title": "EventNow",
+          "role": "Backend Developer",
+          "shortDescription": "A scalable real-time event discovery platform heavily focused on clean code and API performance.",
+          "detailedContent": {
+            "context": "Academic Project (University of Queensland)",
+            "challenge": "Users needed a centralized, highly performant API to query, filter, and discover upcoming local events in real-time using complex and dynamic search parameters.",
+            "solution": "I developed a comprehensive set of RESTful APIs heavily focused on fast data retrieval, robust filtering logic, and clean code principles. Leveraging FastAPI's native asynchronous support, the system efficiently handles concurrent I/O operations without blocking. The architecture strictly separates business logic from data access, enforcing strict data validation schemas."
+          },
+          "resumeBullets": [
+            {
+              "text": "Engineered a highly performant RESTful API discovery engine using FastAPI and async database drivers, managing 1k+ concurrent local event queries/sec.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Optimized complex search and filtering query operations, achieving sub-100ms API response latency on local events data retrieval.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Achieved 95%+ unit test coverage using Pytest to guarantee system reliability and prevent regressions during rapid feature updates.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "title": "EventNow",
+          "role": "Desarrollador Backend",
+          "shortDescription": "Una plataforma escalable de descubrimiento de eventos en tiempo real muy centrada en código limpio y rendimiento de APIs.",
+          "detailedContent": {
+            "context": "Proyecto Académico (University of Queensland)",
+            "challenge": "Los usuarios necesitaban una API centralizada y altamente eficiente para consultar, filtrar y descubrir próximos eventos locales en tiempo real utilizando parámetros de búsqueda complejos y dinámicos.",
+            "solution": "Desarrollé un conjunto completo de APIs RESTful fuertemente enfocadas en la recuperación rápida de datos, lógica de filtrado robusta y principios de código limpio. Aprovechando el soporte asíncrono nativo de FastAPI, el sistema maneja eficientemente operaciones de E/S concurrentes sin bloquearse. La arquitectura separa estrictamente la lógica de negocio del acceso a datos, aplicando esquemas estrictos de validación de datos."
+          },
+          "resumeBullets": [
+            {
+              "text": "Diseñó un motor de API RESTful de alto rendimiento utilizando FastAPI y controladores de base de datos asíncronos, gestionando más de 1000 consultas concurrentes de eventos locales/seg.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Optimizó operaciones complejas de búsqueda y filtrado de consultas, logrando una latencia de respuesta de API inferior a 100 ms en la recuperación de datos de eventos locales.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Logró una cobertura de pruebas unitarias superior al 95% utilizando Pytest para garantizar la confiabilidad del sistema y prevenir regresiones durante actualizaciones rápidas de características.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "prj-rtc",
+      "projectType": "personal_product",
+      "experienceId": null,
+      "clientId": "cmp-ac-transparencia",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "product-ownership",
+        "civic-tech",
+        "analytics",
+        "databases"
+      ],
+      "relatedSkills": [
+        "skl-python",
+        "skl-postgresql"
+      ],
+      "urlGitHub": "https://github.com/jordanlazo/revisatucandidato",
+      "metadata": {
+        "status": "Completed",
+        "dateStart": "2022-05",
+        "dateEnd": "2022-12"
+      },
+      "languages": {
+        "en": {
+          "title": "Revisa Tu Candidato (RTC)",
+          "role": "Product Owner",
+          "shortDescription": "A civic technology platform developed for AC Transparencia to evaluate political candidates.",
+          "detailedContent": {
+            "context": "Civic Technology / Product Development",
+            "challenge": "Citizens required a reliable, centralized, and user-friendly platform to effectively monitor and evaluate political candidate proposals. The organization needed a system that could not only handle complex political data but also track how users engaged with this information to improve civic participation.",
+            "solution": "I led the end-to-end product development lifecycle to translate the organization's transparency goals into a functional digital platform. Operating as the Product Owner, I collaborated closely with stakeholders to define the roadmap, prioritize the product backlog, and ensure the engineering deliverables aligned with the core mission. I focused heavily on defining clear acceptance criteria for core features, including data ingestion and user analytics."
+          },
+          "resumeBullets": [
+            {
+              "text": "Led the product vision and development lifecycle for 'Revisa Tu Candidato,' a civic technology platform for AC Transparencia, successfully launching a functional beta release.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Oversaw the design and implementation of user monitoring systems to track engagement, gather actionable insights, and guide product iterations.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Managed the product backlog, defining requirements for automated report generation features to facilitate transparent candidate evaluation.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "title": "Revisa Tu Candidato (RTC)",
+          "role": "Product Owner",
+          "shortDescription": "Una plataforma de tecnología cívica desarrollada para la Asociación Civil Transparencia para evaluar candidatos políticos.",
+          "detailedContent": {
+            "context": "Tecnología Cívica / Desarrollo de Producto",
+            "challenge": "Los ciudadanos requerían una plataforma confiable, centralizada y fácil de usar para monitorear y evaluar eficazmente las propuestas de los candidatos políticos. La organización necesitaba un sistema que no solo pudiera manejar datos políticos complejos sino también rastrear cómo los usuarios interactuaban con esta información para mejorar la participación ciudadana.",
+            "solution": "Lideré el ciclo de vida del desarrollo de productos de extremo a extremo para traducir los objetivos de transparencia de la organización en una plataforma digital funcional. Operando como Product Owner, colaboré estrechamente con las partes interesadas para definir la hoja de ruta, priorizar la pila de productos y garantizar que los entregables de ingeniería se alinearan con la misión principal. Me enfoqué fuertemente en definir criterios de aceptación claros para las funciones principales, incluida la ingesta de datos y el análisis de usuarios."
+          },
+          "resumeBullets": [
+            {
+              "text": "Lideró la visión del producto y el ciclo de vida de desarrollo de 'Revisa Tu Candidato', una plataforma de tecnología cívica para AC Transparencia, lanzando con éxito una versión beta funcional.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Supervisó el diseño e implementación de sistemas de monitoreo de usuarios para rastrear la interacción, recopilar información procesable y guiar las iteraciones del producto.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Gestionó la pila de productos, definiendo requisitos para las funciones de generación de informes automatizados para facilitar la evaluación transparente de los candidatos.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "prj-technology-vigilance",
+      "projectType": "professional_service",
+      "experienceId": null,
+      "clientId": "cmp-unheval",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "python",
+        "scraping",
+        "databases"
+      ],
+      "relatedSkills": [
+        "skl-python",
+        "skl-mysql"
+      ],
+      "metadata": {
+        "status": "Completed",
+        "dateStart": "2021-12",
+        "dateEnd": "2022-04"
+      },
+      "languages": {
+        "en": {
+          "title": "Technology Vigilance Center",
+          "role": "Lead Developer / Database Designer",
+          "shortDescription": "Modules for data extraction and technology vigilance requested by Universidad Hermilio Valdizán.",
+          "resumeBullets": [
+            {
+              "text": "Developed modules of the Technology Vigilance Center requested by Universidad Hermilio Valdizán (UNHEVAL).",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Responsible for the design and modeling of the database.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Designed and implemented algorithms for the data extraction from a variety of information sources.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "title": "Centro de Vigilancia Tecnológica",
+          "role": "Desarrollador Principal / Diseñador de Base de Datos",
+          "shortDescription": "Módulos de extracción de datos y vigilancia tecnológica solicitados por la Universidad Hermilio Valdizán.",
+          "resumeBullets": [
+            {
+              "text": "Desarrolló módulos del Centro de Vigilancia Tecnológica solicitado por la Universidad Hermilio Valdizán (UNHEVAL).",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Responsable del diseño y modelado de la base de datos.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Diseñó e implementó algoritmos para la extracción de datos de una variedad de fuentes de información.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "prj-pcep",
+      "projectType": "professional_service",
+      "experienceId": null,
+      "clientId": "cmp-concytec",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "data-science",
+        "data-visualization",
+        "databases"
+      ],
+      "relatedSkills": [
+        "skl-python",
+        "skl-mysql",
+        "skl-redis"
+      ],
+      "urlGitHub": "https://github.com/jordanlazo/pcep",
+      "metadata": {
+        "status": "Completed",
+        "dateStart": "2020-09",
+        "dateEnd": "2021-12"
+      },
+      "languages": {
+        "en": {
+          "title": "The Peruvian Economic Complexity Platform",
+          "role": "Lead Data/Backend Engineer",
+          "shortDescription": "A platform requested by CONCYTEC to analyze and visualize Peruvian economic complexity indicators.",
+          "resumeBullets": [
+            {
+              "text": "Developed modules of the Peruvian Economic Complexity Platform requested by CONCYTEC.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Re-factored and tuned the database using MySQL and Redis.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Assisted in reformatting Excel files for data analysis of economic complexity indicators.",
+              "categories": [
+                "data"
+              ]
+            },
+            {
+              "text": "Analyzed data and selected the most important features to obtain insights.",
+              "categories": [
+                "data",
+                "ai"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "title": "Plataforma de Complejidad Económica del Perú",
+          "role": "Ingeniero Principal de Datos y Backend",
+          "shortDescription": "Una plataforma solicitada por CONCYTEC para analizar y visualizar indicadores de complejidad económica del Perú.",
+          "resumeBullets": [
+            {
+              "text": "Desarrolló módulos de la Plataforma de Complejidad Económica del Perú solicitada por CONCYTEC.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Refactorizó y optimizó la base de datos usando MySQL y Redis.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Asistió en el reformateo de archivos Excel para el análisis de datos de indicadores de complejidad económica.",
+              "categories": [
+                "data"
+              ]
+            },
+            {
+              "text": "Analizó datos y seleccionó las características más importantes para obtener información.",
+              "categories": [
+                "data",
+                "ai"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "prj-gis-social-networks",
+      "projectType": "academic",
+      "experienceId": null,
+      "clientId": "cmp-ucsp",
+      "collections": [
+        "portfolio"
+      ],
+      "tags": [
+        "python",
+        "gis",
+        "data-scraping",
+        "nlp"
+      ],
+      "relatedSkills": [
+        "skl-python",
+        "skl-javascript",
+        "skl-postgresql"
+      ],
+      "metadata": {
+        "status": "Completed",
+        "dateStart": "2017-07",
+        "dateEnd": "2017-11"
+      },
+      "languages": {
+        "en": {
+          "title": "GIS - social networks retrieval",
+          "role": "Researcher / Developer",
+          "shortDescription": "A real-time crawler to collect and analyze geographic and sentiment data from social media users.",
+          "resumeBullets": [
+            {
+              "text": "Developed a real-time social network crawler to get geographic information from 1M+ users.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Analyzed the behavior (sentiment analysis) of users according to their location.",
+              "categories": [
+                "data",
+                "ai"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "title": "GIS - Recuperación en Redes Sociales",
+          "role": "Investigador / Desarrollador",
+          "shortDescription": "Un crawler en tiempo real para recopilar y analizar datos geográficos y de sentimiento de usuarios de redes sociales.",
+          "resumeBullets": [
+            {
+              "text": "Desarrolló un crawler de redes sociales en tiempo real para obtener información geográfica de más de 1 millón de usuarios.",
+              "categories": [
+                "backend",
+                "data"
+              ]
+            },
+            {
+              "text": "Analizó el comportamiento (análisis de sentimiento) de los usuarios según su ubicación.",
+              "categories": [
+                "data",
+                "ai"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "prj-tickettailor",
+      "projectType": "academic",
+      "experienceId": null,
+      "clientId": "cmp-uq",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "tags": [
+        "fastapi",
+        "aws",
+        "event-driven",
+        "microservices"
+      ],
+      "relatedSkills": [
+        "skl-python",
+        "skl-fastapi",
+        "skl-aws-sqs",
+        "skl-aws-sns",
+        "skl-postgresql",
+        "skl-docker"
+      ],
+      "urlGitHub": "https://github.com/jordanlazo/tickettailor",
+      "metadata": {
+        "status": "Completed",
+        "dateStart": "2025-07",
+        "dateEnd": "2025-11"
+      },
+      "languages": {
+        "en": {
+          "title": "TicketTailor",
+          "role": "Backend Engineer",
+          "shortDescription": "An event-driven ticket management platform utilizing AWS SNS/SQS to decouple services.",
+          "detailedContent": {
+            "context": "Academic Project (University of Queensland)",
+            "challenge": "Handling high-concurrency ticket reservations and RSVP workflows without dropping requests or overloading the primary database during traffic spikes.",
+            "solution": "To solve the concurrency bottleneck, I designed a decoupled, event-driven backend architecture. Instead of processing reservations synchronously, the system queues incoming requests and processes them via background workers. I implemented an asynchronous communication pattern utilizing AWS SQS for message queuing and AWS SNS for broadcasting event updates to multiple microservices."
+          },
+          "resumeBullets": [
+            {
+              "text": "Designed an event-driven backend architecture handling 10k+ concurrent reservation requests/sec using AWS SQS/SNS and FastAPI, reducing DB write contention by 90% via asynchronous queueing.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Engineered robust, fully asynchronous microservices in FastAPI with optimized SQL query logic, boosting ticket booking throughput and decreasing endpoint latency.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Containerized the microservice ecosystem with Docker, establishing isolated databases in PostgreSQL and automating integration tests.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        },
+        "es": {
+          "title": "TicketTailor",
+          "role": "Ingeniero Backend",
+          "shortDescription": "Una plataforma de gestión de tickets orientada a eventos que utiliza AWS SNS/SQS para desacoplar servicios.",
+          "detailedContent": {
+            "context": "Proyecto Académico (University of Queensland)",
+            "challenge": "Manejar reservas de tickets con alta concurrencia y flujos de trabajo RSVP sin perder solicitudes ni sobrecargar la base de datos principal durante picos de tráfico.",
+            "solution": "Para resolver el cuello de botella de la concurrencia, diseñé una arquitectura backend desacoplada y orientada a eventos. En lugar de procesar las reservas de forma síncrona, el sistema pone en cola las solicitudes entrantes y las procesa a través de trabajadores en segundo plano. Implementé un patrón de comunicación asíncrono utilizando AWS SQS para la cola de mensajes y AWS SNS para difundir actualizaciones de eventos a múltiples microservicios."
+          },
+          "resumeBullets": [
+            {
+              "text": "Diseñó una arquitectura backend orientada a eventos que maneja más de 10 mil solicitudes de reserva concurrentes/seg utilizando AWS SQS/SNS y FastAPI, reduciendo la contención de escritura en bases de datos en un 90% mediante colas asíncronas.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Desarrolló microservicios robustos y totalmente asíncronos en FastAPI con lógica de consulta SQL optimizada, aumentando el rendimiento de reserva de tickets y disminuyendo la latencia de los endpoints.",
+              "categories": [
+                "backend"
+              ]
+            },
+            {
+              "text": "Contenedorizó el ecosistema de microservicios con Docker, estableciendo bases de datos aisladas en PostgreSQL y automatizando las pruebas de integración.",
+              "categories": [
+                "backend"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": "skl-aws-beanstalk",
+      "name": "AWS Elastic Beanstalk",
+      "category": "cloud",
+      "importance": "core",
+      "keywords": [
+        "AWS Beanstalk",
+        "Elastic Beanstalk",
+        "AWS PaaS"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:aws"
+    },
+    {
+      "id": "skl-langchain",
+      "name": "LangChain",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "LangChain Framework",
+        "LLM Orchestration",
+        "AI Agents",
+        "Generative AI",
+        "Lang Chain"
+      ],
+      "yearsExperience": 1,
+      "proficiency": "advanced",
+      "icon": "logos:langchain"
+    },
+    {
+      "id": "skl-mysql",
+      "name": "MySQL",
+      "category": "database",
+      "importance": "core",
+      "keywords": [
+        "MySQL Database",
+        "SQL Database",
+        "Relational Database",
+        "My SQL"
+      ],
+      "yearsExperience": 5,
+      "proficiency": "expert",
+      "icon": "logos:mysql",
+      "url": "https://www.mysql.com"
+    },
+    {
+      "id": "skl-javascript",
+      "name": "JavaScript",
+      "category": "programming_language",
+      "importance": "secondary",
+      "icon": "logos:javascript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "id": "skl-postgresql",
+      "name": "PostgreSQL",
+      "category": "database",
+      "importance": "core",
+      "keywords": [
+        "PostgreSQL Database",
+        "Postgres",
+        "SQL Database",
+        "Relational Database",
+        "pgSQL"
+      ],
+      "yearsExperience": 5,
+      "proficiency": "expert",
+      "icon": "logos:postgresql",
+      "url": "https://www.postgresql.org"
+    },
+    {
+      "id": "skl-redshift",
+      "name": "Amazon Redshift",
+      "category": "cloud",
+      "importance": "core",
+      "keywords": [
+        "Amazon Redshift",
+        "Redshift DW",
+        "Data Warehousing",
+        "AWS Redshift"
+      ],
+      "yearsExperience": 2,
+      "proficiency": "advanced",
+      "icon": "logos:aws"
+    },
+    {
+      "id": "skl-pytorch",
+      "name": "PyTorch",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "PyTorch Framework",
+        "Deep Learning",
+        "Neural Networks",
+        "Tensor Computations"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:pytorch"
+    },
+    {
+      "id": "skl-dynamodb",
+      "name": "DynamoDB",
+      "category": "database",
+      "importance": "core",
+      "keywords": [
+        "Amazon DynamoDB",
+        "DynamoDB Database",
+        "NoSQL Database",
+        "Key-Value Store",
+        "AWS DynamoDB"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:aws-dynamodb",
+      "url": "https://aws.amazon.com/dynamodb/"
+    },
+    {
+      "id": "skl-unity",
+      "name": "Unity",
+      "category": "framework",
+      "importance": "secondary",
+      "icon": "logos:unity",
+      "url": "https://unity.com"
+    },
+    {
+      "id": "skl-aws-s3",
+      "name": "AWS S3",
+      "category": "cloud",
+      "importance": "core",
+      "keywords": [
+        "Amazon S3",
+        "AWS Simple Storage Service",
+        "Cloud Storage",
+        "Object Storage",
+        "Amazon Simple Storage Service"
+      ],
+      "yearsExperience": 5,
+      "proficiency": "expert",
+      "icon": "logos:aws-s3",
+      "url": "https://aws.amazon.com/s3/"
+    },
+    {
+      "id": "skl-aws-rds",
+      "name": "AWS RDS",
+      "category": "cloud",
+      "importance": "core",
+      "keywords": [
+        "Amazon RDS",
+        "Relational Database Service",
+        "AWS RDS Database"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "expert",
+      "icon": "logos:aws-rds"
+    },
+    {
+      "id": "skl-cockroachdb",
+      "name": "CockroachDB",
+      "category": "database",
+      "importance": "core",
+      "keywords": [
+        "CockroachDB",
+        "Distributed SQL",
+        "NewSQL Database",
+        "Cloud-Native SQL"
+      ],
+      "yearsExperience": 1,
+      "proficiency": "intermediate",
+      "icon": "logos:cockroachdb"
+    },
+    {
+      "id": "skl-aws-sns",
+      "name": "AWS SNS",
+      "category": "cloud",
+      "importance": "core",
+      "keywords": [
+        "AWS SNS",
+        "Amazon Simple Notification Service",
+        "SNS",
+        "Pub/Sub Messaging"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:aws-sns"
+    },
+    {
+      "id": "skl-pytest",
+      "name": "Pytest",
+      "category": "tool",
+      "importance": "core",
+      "keywords": [
+        "Pytest Testing Framework",
+        "Unit Testing",
+        "Test Automation",
+        "Python Test automation",
+        "Py test"
+      ],
+      "yearsExperience": 5,
+      "proficiency": "expert",
+      "icon": "logos:pytest"
+    },
+    {
+      "id": "skl-vuejs",
+      "name": "Vue.js",
+      "category": "framework",
+      "importance": "secondary",
+      "icon": "logos:vue",
+      "url": "https://vuejs.org"
+    },
+    {
+      "id": "skl-sqlalchemy",
+      "name": "SQLAlchemy",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "SQLAlchemy ORM",
+        "Object-Relational Mapping",
+        "ORM",
+        "SQL Alchemy"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "expert",
+      "icon": "logos:sqlalchemy"
+    },
+    {
+      "id": "skl-fastapi",
+      "name": "FastAPI",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "FastAPI Framework",
+        "Fast API",
+        "Asynchronous Python APIs"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "expert",
+      "icon": "logos:fastapi",
+      "url": "https://fastapi.tiangolo.com"
+    },
+    {
+      "id": "skl-asyncio",
+      "name": "Asyncio",
+      "category": "architecture_pattern",
+      "importance": "core",
+      "keywords": [
+        "asyncio",
+        "asynchronous programming",
+        "async/await",
+        "Concurrent Python"
+      ],
+      "yearsExperience": 5,
+      "proficiency": "expert",
+      "icon": "logos:python"
+    },
+    {
+      "id": "skl-nats",
+      "name": "NATS",
+      "category": "tool",
+      "importance": "core",
+      "keywords": [
+        "NATS Messaging",
+        "NATS.io",
+        "Message Broker",
+        "Publish-Subscribe"
+      ],
+      "yearsExperience": 2,
+      "proficiency": "advanced",
+      "icon": "logos:nats"
+    },
+    {
+      "id": "skl-aws-sqs",
+      "name": "AWS SQS",
+      "category": "cloud",
+      "importance": "core",
+      "keywords": [
+        "Amazon Simple Queue Service",
+        "SQS",
+        "AWS Simple Queue Service",
+        "Message Queue"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:aws-sqs",
+      "url": "https://aws.amazon.com/sqs/"
+    },
+    {
+      "id": "skl-redis",
+      "name": "Redis",
+      "category": "database",
+      "importance": "core",
+      "keywords": [
+        "Redis Cache",
+        "In-Memory Database",
+        "Redis NoSQL"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "advanced",
+      "icon": "logos:redis"
+    },
+    {
+      "id": "skl-opencv",
+      "name": "OpenCV",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "OpenCV Library",
+        "Computer Vision",
+        "Image Processing",
+        "Object Detection"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:opencv"
+    },
+    {
+      "id": "skl-python",
+      "name": "Python",
+      "category": "programming_language",
+      "importance": "core",
+      "keywords": [
+        "Python 3",
+        "Python Programming",
+        "Python 3.x",
+        "Py"
+      ],
+      "yearsExperience": 6,
+      "proficiency": "expert",
+      "icon": "logos:python",
+      "url": "https://www.python.org"
+    },
+    {
+      "id": "skl-reactjs",
+      "name": "React",
+      "category": "framework",
+      "importance": "secondary",
+      "icon": "logos:react",
+      "url": "https://react.dev"
+    },
+    {
+      "id": "skl-pandas",
+      "name": "Pandas",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "Pandas Data Analysis",
+        "Data Manipulation",
+        "Pandas Library",
+        "DataFrames"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "advanced",
+      "icon": "logos:pandas"
+    },
+    {
+      "id": "skl-numpy",
+      "name": "NumPy",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "NumPy Library",
+        "Numeric Python",
+        "Scientific Computing",
+        "Multidimensional Arrays"
+      ],
+      "yearsExperience": 5,
+      "proficiency": "expert",
+      "icon": "logos:numpy"
+    },
+    {
+      "id": "skl-flask",
+      "name": "Flask",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "Flask Framework",
+        "Python Flask Microframework",
+        "Flask API"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "expert",
+      "icon": "logos:flask",
+      "url": "https://flask.palletsprojects.com"
+    },
+    {
+      "id": "skl-aws-lambda",
+      "name": "AWS Lambda",
+      "category": "cloud",
+      "importance": "core",
+      "keywords": [
+        "AWS Lambda Functions",
+        "Serverless Computing",
+        "Serverless Architecture",
+        "FaaS"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "expert",
+      "icon": "logos:aws-lambda",
+      "url": "https://aws.amazon.com/lambda/"
+    },
+    {
+      "id": "skl-csharp",
+      "name": "C#",
+      "category": "programming_language",
+      "importance": "secondary",
+      "icon": "logos:c-sharp",
+      "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+    },
+    {
+      "id": "skl-spark",
+      "name": "Apache Spark",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "Apache Spark",
+        "PySpark",
+        "Big Data",
+        "Distributed Data Processing"
+      ],
+      "yearsExperience": 2,
+      "proficiency": "intermediate",
+      "icon": "logos:spark"
+    },
+    {
+      "id": "skl-kubernetes",
+      "name": "Kubernetes",
+      "category": "tool",
+      "importance": "core",
+      "keywords": [
+        "Kubernetes Orchestration",
+        "K8s",
+        "Container Orchestration",
+        "K8s Cluster"
+      ],
+      "yearsExperience": 2,
+      "proficiency": "intermediate",
+      "icon": "logos:kubernetes"
+    },
+    {
+      "id": "skl-dask",
+      "name": "Dask",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "Dask DataFrames",
+        "Dask Distributed",
+        "Parallel Computing",
+        "Python parallel computing"
+      ],
+      "yearsExperience": 2,
+      "proficiency": "advanced",
+      "icon": "logos:dask"
+    },
+    {
+      "id": "skl-postgis",
+      "name": "PostGIS",
+      "category": "database",
+      "importance": "core",
+      "keywords": [
+        "PostGIS Spatial Database",
+        "Geospatial Data",
+        "GIS Database",
+        "PostgreSQL Spatial Extension"
+      ],
+      "yearsExperience": 2,
+      "proficiency": "advanced",
+      "icon": "logos:postgis"
+    },
+    {
+      "id": "skl-php",
+      "name": "PHP",
+      "category": "programming_language",
+      "importance": "secondary",
+      "icon": "logos:php",
+      "url": "https://www.php.net"
+    },
+    {
+      "id": "skl-docker",
+      "name": "Docker",
+      "category": "tool",
+      "importance": "core",
+      "keywords": [
+        "Docker Containers",
+        "Containerization",
+        "Docker Compose",
+        "Docker Image"
+      ],
+      "yearsExperience": 5,
+      "proficiency": "expert",
+      "icon": "logos:docker-icon",
+      "url": "https://www.docker.com"
+    },
+    {
+      "id": "skl-mongodb",
+      "name": "MongoDB",
+      "category": "database",
+      "importance": "core",
+      "keywords": [
+        "MongoDB Database",
+        "NoSQL",
+        "Document Database",
+        "Mongo DB"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "advanced",
+      "icon": "logos:mongodb",
+      "url": "https://www.mongodb.com"
+    },
+    {
+      "id": "skl-laravel",
+      "name": "Laravel",
+      "category": "framework",
+      "importance": "secondary",
+      "icon": "logos:laravel",
+      "url": "https://laravel.com"
+    }
+  ],
+  "publications": [
+    {
+      "id": "pub-neural-style-transfer",
+      "title": "Improving Neural Style Transfer by Incorporating Mid-Level Representation",
+      "authors": [
+        "J. R. Lazo Cahua",
+        "J. Eduardo Ochoa-Luna"
+      ],
+      "publisher": "IEEE Latin American Conference on Computational Intelligence (LA-CCI)",
+      "date": "2021-11",
+      "doi": "10.1109/LA-CCI48322.2021.9769780",
+      "url": "https://doi.org/10.1109/LA-CCI48322.2021.9769780",
+      "relatedSkills": [
+        "skl-python"
+      ],
+      "languages": {
+        "en": {
+          "abstract": "This publication addresses improvements in Neural Style Transfer techniques by incorporating intermediate mid-level features to preserve structural and semantic information during style transfer."
+        },
+        "es": {
+          "abstract": "Esta publicación aborda mejoras en las técnicas de Transferencia de Estilo Neuronal mediante la incorporación de características intermedias de nivel medio para preservar la información estructural y semántica durante la transferencia de estilo."
+        }
+      }
+    }
+  ],
+  "teaching": [
+    {
+      "id": "tch-silabuz",
+      "institutionId": "cmp-silabuz",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "metadata": {
+        "dateStart": "2022-10",
+        "dateEnd": "2023-03"
+      },
+      "languages": {
+        "en": {
+          "role": "Instructor",
+          "courses": [
+            "Introduction to Programming",
+            "Introduction to Databases",
+            "Backend with Flask"
+          ],
+          "achievements": [
+            "Conducted backend and programming foundation courses for Silabuz platform.",
+            "Provided one-on-one mentoring for a small group of mentees.",
+            "Helped plan lecture schedules and evaluated topics taught in the course.",
+            "Led sessions, graded homework, and provided feedback to 100+ students."
+          ]
+        },
+        "es": {
+          "role": "Instructor",
+          "courses": [
+            "Introducción a la Programación",
+            "Introducción a Bases de Datos",
+            "Backend con Flask"
+          ],
+          "achievements": [
+            "Dictó cursos de backend y fundamentos de programación para la plataforma Silabuz.",
+            "Proporcionó mentoría uno a uno para un grupo reducido de estudiantes.",
+            "Ayudó a planificar los horarios de clase y evaluar los temas enseñados en el curso.",
+            "Dirigió sesiones, calificó tareas y brindó retroalimentación a más de 100 estudiantes."
+          ]
+        }
+      }
+    },
+    {
+      "id": "tch-ucsp",
+      "institutionId": "cmp-ucsp",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "metadata": {
+        "dateStart": "2020-09",
+        "dateEnd": "2020-11"
+      },
+      "languages": {
+        "en": {
+          "role": "Instructor",
+          "courses": [
+            "Fundamentals of Web Development"
+          ],
+          "achievements": [
+            "Lectured at the continuing education course Fundamentals of Web Development.",
+            "Helped plan lecture schedules and evaluated topics taught in the course.",
+            "Led sessions, graded homework, and provided feedback to ~25 students."
+          ]
+        },
+        "es": {
+          "role": "Instructor",
+          "courses": [
+            "Fundamentos de Desarrollo Web"
+          ],
+          "achievements": [
+            "Dictó el curso de educación continua de Fundamentos de Desarrollo Web.",
+            "Ayudó a planificar los horarios de clase y evaluar los temas enseñados en el curso.",
+            "Dirigió sesiones, calificó tareas y brindó retroalimentación a ~25 estudiantes."
+          ]
+        }
+      }
+    },
+    {
+      "id": "tch-tecsup",
+      "institutionId": "cmp-tecsup",
+      "collections": [
+        "resume",
+        "portfolio"
+      ],
+      "metadata": {
+        "dateStart": "2022-03",
+        "dateEnd": "2022-07"
+      },
+      "languages": {
+        "en": {
+          "role": "Lecturer",
+          "courses": [
+            "Introduction to Programming"
+          ],
+          "achievements": [
+            "Conducted the Introduction to Programming course.",
+            "Led sessions, graded homework, and provided feedback to ~100 students."
+          ]
+        },
+        "es": {
+          "role": "Profesor",
+          "courses": [
+            "Introducción a la Programación"
+          ],
+          "achievements": [
+            "Dictó el curso de Introducción a la Programación.",
+            "Dirigió sesiones, calificó tareas y brindó retroalimentación a ~100 estudiantes."
+          ]
+        }
+      }
+    }
+  ]
+}
