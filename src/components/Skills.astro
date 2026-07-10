@@ -1,0 +1,39 @@
+---
+// src/components/Skills.astro
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  entries: CollectionEntry<'skills'>[];
+}
+const { entries } = Astro.props;
+
+const labels: Record<string, string> = {
+  programming_language: 'Languages',
+  framework: 'Frameworks',
+  database: 'Databases',
+  tool: 'Tools',
+  cloud: 'Cloud & Infra',
+};
+
+const grouped = entries.reduce<Record<string, string[]>>((acc, s) => {
+  const key = s.data.category;
+  acc[key] = acc[key] ?? [];
+  acc[key].push(s.data.name);
+  return acc;
+}, {});
+---
+<section id="skills">
+  <div class="sec-head">
+    <h2 class="sec-title">/ <span>stack</span></h2>
+  </div>
+  <div class="skill-groups">
+    {Object.entries(grouped).map(([category, names]) => (
+      <div class="skill-group">
+        <h3>{labels[category] ?? category}</h3>
+        <div class="tags">
+          {names.map((name) => <span class="tag">{name}</span>)}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

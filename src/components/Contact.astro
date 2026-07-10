@@ -1,0 +1,170 @@
+---
+// src/components/Contact.astro
+import { getEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  profile: {
+    name: string;
+    title: string;
+    contact: { email: string; github: string; linkedin: string; location: string };
+    education: { institution: string; degree: string; dateStart: string; dateEnd: string }[];
+  };
+  experiences: CollectionEntry<'experiences'>[];
+  projects: CollectionEntry<'projects'>[];
+  skills: CollectionEntry<'skills'>[];
+}
+const { profile, experiences, projects, skills } = Astro.props;
+
+const expLines = await Promise.all(
+  experiences.map(async (exp) => {
+    const company = await getEntry(exp.data.companyId);
+    return `- ${exp.data.metadata.dateStart} to ${exp.data.metadata.dateEnd ?? 'present'}: ${exp.data.languages.en.role} @ ${company?.data.name ?? ''}`;
+  })
+);
+
+const projLines = projects.map(
+  (p) => `- ${p.id.replace('prj-', '')}: ${p.data.languages.en.title} — ${p.data.languages.en.shortDescription}`
+);
+
+const skillsByCategory = skills.reduce<Record<string, string[]>>((acc, s) => {
+  acc[s.data.category] = acc[s.data.category] ?? [];
+  acc[s.data.category].push(s.data.name);
+  return acc;
+}, {});
+const skillLines = Object.entries(skillsByCategory).map(([cat, names]) => `[${cat}] ${names.join(', ')}`);
+
+const eduLines = profile.education.map((ed) => `- ${ed.degree}, ${ed.institution} (${ed.dateStart}–${ed.dateEnd})`);
+
+const commands = {
+  about: `${profile.name} — ${profile.title}\nLocation: ${profile.contact.location}`,
+  skills: skillLines.join('\n'),
+  education: eduLines.join('\n'),
+  experience: `Log Entries:\n${expLines.join('\n')}`,
+  projects: `Git Repositories:\n${projLines.join('\n')}`,
+  contact: `email - ${profile.contact.email}\ngithub - ${profile.contact.github}\nlinkedin - ${profile.contact.linkedin}\nlocation - ${profile.contact.location}`,
+};
+const commandsJson = JSON.stringify(commands);
+---
+<section id="contact" style="border-bottom:none;">
+  <div class="sec-head">
+    <h2 class="sec-title">/ <span>contact</span></h2>
+  </div>
+  <div class="terminal" id="terminal" onclick="focusTerminalInput()">
+    <div id="terminalHistory">
+      <div><span class="prompt">$</span> <span class="cmd">contact</span></div>
+      <div class="out">email - <a href={`mailto:${profile.contact.email}`}>{profile.contact.email}</a></div>
+      <div class="out">github - <a href={profile.contact.github} target="_blank" rel="noopener">{profile.contact.github}</a></div>
+      <div class="out">linkedin - <a href={profile.contact.linkedin} target="_blank" rel="noopener">{profile.contact.linkedin}</a></div>
+      <div class="out">location - {profile.contact.location}</div>
+    </div>
+    <div class="terminal-prompt-line">
+      <span class="prompt">$</span>&nbsp;<span class="terminal-input-display" id="terminalInputDisplay"></span><span class="terminal-cursor" id="terminalCursor"></span>
+      <input type="text" class="terminal-hidden-input" id="terminalHiddenInput" autocomplete="off" spellcheck="false" aria-label="Interactive terminal CLI input. Type help for options." />
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="terminal-data" set:html={commandsJson} />
+
+<style>
+  .terminal{ font-family:var(--mono); font-size:14px; background:var(--bg-raised); border:1px solid var(--line); padding:22px 24px; cursor:text; max-height:400px; overflow-y:auto; }
+  .terminal .prompt{ color:var(--amber); }
+  .terminal .cmd{ color:var(--ink); }
+  .terminal .out{ color:var(--ink-dim); margin:6px 0 0 16px; }
+  .terminal a{ color:var(--accent); text-decoration:none; }
+  .terminal a:hover{ text-decoration:underline; }
+  .terminal-prompt-line{ display:flex; align-items:center; position:relative; margin-top:6px; }
+  .terminal-hidden-input{ position:absolute; opacity:0; width:0; height:0; pointer-events:none; border:none; background:none; }
+  .terminal-cursor{ width:8px; height:15px; background:var(--amber); display:inline-block; margin-left:2px; animation: terminal-blink 1s step-end infinite; }
+  @keyframes terminal-blink{ from, to { background-color: transparent } 50% { background-color: var(--amber) } }
+  .terminal-input-display{ color:var(--ink); white-space:pre-wrap; }
+  #terminalHistory{ white-space:pre-wrap; }
+  .prompt-entry{ margin-top:12px; }
+</style>
+
+<script>
+  const dataEl = document.getElementById('terminal-data');
+  const commands: Record<string, string> = dataEl ? JSON.parse(dataEl.textContent || '{}') : {};
+  commands.help = `Available commands:
+  about       - Brief introduction
+  skills      - Stack summary by category
+  education   - Education history
+  experience  - Professional experience log
+  projects    - Project repositories
+  contact     - Contact links
+  clear       - Clear terminal screen`;
+
+  const commandHistory: string[] = [];
+  let historyIndex = -1;
+
+  function focusTerminalInput() {
+    const input = document.getElementById('terminalHiddenInput') as HTMLInputElement | null;
+    if (input) input.focus();
+  }
+  (window as any).focusTerminalInput = focusTerminalInput;
+
+  function escapeHtml(text: string) {
+    return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+  }
+
+  function formatTerminalOutput(text: string) {
+    return text.split('\n').map((line) => `<div class="out">${escapeHtml(line)}</div>`).join('');
+  }
+
+  function updateInputDisplay(val: string) {
+    const display = document.getElementById('terminalInputDisplay');
+    if (display) display.textContent = val;
+  }
+
+  function executeCommand(cmdLine: string) {
+    const historyContainer = document.getElementById('terminalHistory');
+    if (!historyContainer) return;
+    const cleanCmd = cmdLine.toLowerCase().trim();
+
+    const cmdEntry = document.createElement('div');
+    cmdEntry.className = 'prompt-entry';
+    cmdEntry.innerHTML = `<span class="prompt">$</span> <span class="cmd">${escapeHtml(cmdLine)}</span>`;
+    historyContainer.appendChild(cmdEntry);
+
+    if (cleanCmd === 'clear') { historyContainer.innerHTML = ''; return; }
+    if (cleanCmd === '') return;
+
+    const outputHtml = commands[cleanCmd]
+      ? formatTerminalOutput(commands[cleanCmd])
+      : `<div class="out">command not found: ${escapeHtml(cmdLine)}. Type 'help' for options.</div>`;
+
+    const outputContainer = document.createElement('div');
+    outputContainer.innerHTML = outputHtml;
+    historyContainer.appendChild(outputContainer);
+
+    const terminal = document.getElementById('terminal');
+    if (terminal) setTimeout(() => { terminal.scrollTop = terminal.scrollHeight; }, 0);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    focusTerminalInput();
+    const input = document.getElementById('terminalHiddenInput') as HTMLInputElement | null;
+    if (!input) return;
+    input.addEventListener('input', () => updateInputDisplay(input.value));
+    input.addEventListener('keydown', (e: KeyboardEvent) => {
+      if (e.key === 'Enter') {
+        const line = input.value;
+        if (line.trim()) { commandHistory.push(line); historyIndex = commandHistory.length; }
+        executeCommand(line);
+        input.value = '';
+        updateInputDisplay('');
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (commandHistory.length > 0 && historyIndex > 0) {
+          historyIndex--; input.value = commandHistory[historyIndex]; updateInputDisplay(input.value);
+        }
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (historyIndex < commandHistory.length - 1) { historyIndex++; input.value = commandHistory[historyIndex]; }
+        else { historyIndex = commandHistory.length; input.value = ''; }
+        updateInputDisplay(input.value);
+      }
+    });
+  });
+</script>

@@ -1,0 +1,46 @@
+---
+// src/components/Experience.astro
+import { getEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  entries: CollectionEntry<'experiences'>[];
+}
+const { entries } = Astro.props;
+
+const rows = await Promise.all(
+  entries.map(async (exp) => {
+    const company = await getEntry(exp.data.companyId);
+    const skills = await Promise.all(exp.data.relatedSkills.map((s) => getEntry(s)));
+    return {
+      id: exp.id,
+      role: exp.data.languages.en.role,
+      companyName: company?.data.name ?? 'Unknown',
+      summary: exp.data.languages.en.summary,
+      dateStart: exp.data.metadata.dateStart,
+      dateEnd: exp.data.metadata.dateEnd,
+      skills: skills.map((s) => s.data.name).slice(0, 5),
+    };
+  })
+);
+---
+<section id="experience">
+  <div class="sec-head">
+    <h2 class="sec-title">/ <span>experience</span></h2>
+  </div>
+  <div class="log">
+    {rows.map((row) => (
+      <div class="log-entry">
+        <span class="log-hash">{row.id.replace('exp-', '')}</span>
+        <span class="log-date">{row.dateStart} — {row.dateEnd ?? 'present'}</span>
+        <div class="log-msg">
+          <div class="role-line">{row.role} · {row.companyName}</div>
+          <div class="desc">{row.summary}</div>
+          <div class="tags">
+            {row.skills.map((name) => <span class="tag">{name}</span>)}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

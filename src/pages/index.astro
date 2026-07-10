@@ -1,22 +1,29 @@
 ---
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Education from '../components/Education.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.astro';
+import Skills from '../components/Skills.astro';
+import Research from '../components/Research.astro';
+import Contact from '../components/Contact.astro';
+import career from '../data/career.raw.json';
 
 const experiences = await getCollection('experiences');
-const first = experiences[0];
-const company = await getEntry(first.data.companyId);
+const projects = await getCollection('projects');
+const skills = await getCollection('skills');
+const publications = await getCollection('publications');
+const { profile } = career;
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<p>{first.data.languages.en.role} @ {company.data.name}</p>
-	</body>
-</html>
+<Base title={`${profile.name} — ${profile.title}`}>
+  <Hero name={profile.name} role={profile.title} pitch={profile.languages.en.summary} />
+  <About summary={profile.languages.en.summary} />
+  <Education education={profile.education} />
+  <Experience entries={experiences} />
+  <Projects entries={projects} />
+  <Research entries={publications} />
+  <Skills entries={skills} />
+  <Contact profile={profile} experiences={experiences} projects={projects} skills={skills} />
+</Base>

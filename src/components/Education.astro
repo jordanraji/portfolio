@@ -1,0 +1,24 @@
+---
+// src/components/Education.astro
+export interface Props {
+  education: { institution: string; degree: string; location: string; dateStart: string; dateEnd: string }[];
+}
+const { education } = Astro.props;
+---
+<section id="education">
+  <div class="sec-head">
+    <h2 class="sec-title">/ <span>education</span></h2>
+  </div>
+  <div class="log">
+    {education.map((ed) => (
+      <div class="log-entry">
+        <span class="log-hash">edu</span>
+        <span class="log-date">{ed.dateStart} — {ed.dateEnd}</span>
+        <div class="log-msg">
+          <div class="role-line">{ed.degree} · {ed.institution}</div>
+          <div class="desc">{ed.location}</div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

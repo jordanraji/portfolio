@@ -1,0 +1,48 @@
+---
+// src/components/Projects.astro
+import { getEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  entries: CollectionEntry<'projects'>[];
+}
+const { entries } = Astro.props;
+
+const rows = await Promise.all(
+  entries.map(async (p) => {
+    const skills = await Promise.all(p.data.relatedSkills.map((s) => getEntry(s)));
+    return {
+      id: p.id,
+      title: p.data.languages.en.title,
+      description: p.data.languages.en.shortDescription,
+      github: p.data.urlGitHub,
+      dateStart: p.data.metadata.dateStart,
+      skills: skills.map((s) => s.data.name).slice(0, 4),
+    };
+  })
+);
+---
+<section id="projects">
+  <div class="sec-head">
+    <h2 class="sec-title">/ <span>projects</span></h2>
+  </div>
+  <div class="log">
+    {rows.map((row) => (
+      <div class="log-entry">
+        <span class="log-hash">{row.id.replace('prj-', '')}</span>
+        <span class="log-date">{row.dateStart}</span>
+        <div class="log-msg">
+          <div class="role-line">
+            {row.github
+              ? <a href={row.github} class="repo-link" target="_blank" rel="noopener">{row.title}</a>
+              : row.title}
+          </div>
+          <div class="desc">{row.description}</div>
+          <div class="tags">
+            {row.skills.map((name) => <span class="tag">{name}</span>)}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

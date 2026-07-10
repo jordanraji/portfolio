@@ -1,0 +1,24 @@
+---
+// src/components/Research.astro
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  entries: CollectionEntry<'publications'>[];
+}
+const { entries } = Astro.props;
+---
+<section id="research">
+  <div class="sec-head">
+    <h2 class="sec-title">/ <span>research</span></h2>
+  </div>
+  {entries.map((pub) => (
+    <div class="paper-card">
+      <p class="paper-title">
+        {pub.data.url
+          ? <a href={pub.data.url} target="_blank" rel="noopener">{pub.data.title}</a>
+          : pub.data.title}
+      </p>
+      <p class="paper-meta">{pub.data.publisher} · {pub.data.date}</p>
+    </div>
+  ))}
+</section>

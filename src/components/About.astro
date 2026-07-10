@@ -1,0 +1,16 @@
+---
+// src/components/About.astro
+export interface Props {
+  summary: string;
+}
+const { summary } = Astro.props;
+---
+<section id="about">
+  <div class="sec-head">
+    <h2 class="sec-title">/ <span>about</span></h2>
+  </div>
+  <div class="about-body">
+    <p>{summary}</p>
+    <p>I like systems that are documented as rigorously as they're built. This is why every project below is written up the way I'd actually write it at work: as a decision record, not a highlight reel.</p>
+  </div>
+</section>
