@@ -16,14 +16,28 @@ const projects = await getCollection('projects');
 const skills = await getCollection('skills');
 const publications = await getCollection('publications');
 const { profile } = career;
+
+// Sort education, experiences, projects and publications descending by date
+const education = [...profile.education].sort((a, b) =>
+  (b.dateStart + 'Z').localeCompare(a.dateStart + 'Z')
+);
+const sortedExperiences = [...experiences].sort((a, b) =>
+  (b.data.metadata.dateStart + 'Z').localeCompare(a.data.metadata.dateStart + 'Z')
+);
+const sortedProjects = [...projects].sort((a, b) =>
+  (b.data.metadata.dateStart + 'Z').localeCompare(a.data.metadata.dateStart + 'Z')
+);
+const sortedPublications = [...publications].sort((a, b) =>
+  (b.data.date + 'Z').localeCompare(a.data.date + 'Z')
+);
 ---
 <Base title={`${profile.name} — ${profile.title}`}>
   <Hero name={profile.name} role={profile.title} pitch={profile.languages.en.summary} />
   <About summary={profile.languages.en.summary} />
-  <Education education={profile.education} />
-  <Experience entries={experiences} />
-  <Projects entries={projects} />
-  <Research entries={publications} />
+  <Education education={education} />
+  <Experience entries={sortedExperiences} />
+  <Projects entries={sortedProjects} />
+  <Research entries={sortedPublications} />
   <Skills entries={skills} />
   <Contact profile={profile} experiences={experiences} projects={projects} skills={skills} />
 </Base>

@@ -6,12 +6,13 @@ export interface Props {
   entries: CollectionEntry<'publications'>[];
 }
 const { entries } = Astro.props;
+const sorted = [...entries].sort((a, b) => (b.data.date + 'Z').localeCompare(a.data.date + 'Z'));
 ---
 <section id="research">
   <div class="sec-head">
     <h2 class="sec-title">/ <span>research</span></h2>
   </div>
-  {entries.map((pub) => (
+  {sorted.map((pub) => (
     <div class="paper-card">
       <p class="paper-title">
         {pub.data.url

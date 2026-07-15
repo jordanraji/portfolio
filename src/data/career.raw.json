@@ -13,35 +13,35 @@
     "education": [
       {
         "institution": "The University of Queensland",
-        "degree": "M.Sc. in Computer Science",
+        "degree": "MSc. of Computer Science",
         "location": "Brisbane, Australia",
-        "dateStart": "2025-07",
-        "dateEnd": "2026-12"
+        "dateStart": "2025",
+        "dateEnd": "2026"
       },
       {
         "institution": "Universidad Continental",
-        "degree": "Gr. Data Analytics",
+        "degree": "GradCert. Data Analytics",
         "location": "Lima, Peru",
         "dateStart": "2020",
         "dateEnd": "2021"
       },
       {
         "institution": "Universidad Nacional Agraria La Molina",
-        "degree": "Gr. Data Science, Machine Learning and Deep Learning",
+        "degree": "GradCert. Data Science, Machine Learning and Deep Learning",
         "location": "Lima, Peru",
         "dateStart": "2020",
         "dateEnd": "2021"
       },
       {
         "institution": "Universidad Católica San Pablo",
-        "degree": "GrDip. Data Science",
+        "degree": "GradDip. Data Science",
         "location": "Arequipa, Peru",
         "dateStart": "2019",
         "dateEnd": "2020"
       },
       {
         "institution": "Universidad Católica San Pablo",
-        "degree": "B.Sc. Computer Science",
+        "degree": "BSc. Computer Science",
         "location": "Arequipa, Peru",
         "dateStart": "2013",
         "dateEnd": "2018"
@@ -206,7 +206,11 @@
         "skl-mysql",
         "skl-cockroachdb",
         "skl-javascript",
-        "skl-docker"
+        "skl-docker",
+        "skl-jquery",
+        "skl-git",
+        "skl-html5",
+        "skl-css3"
       ],
       "metadata": {
         "dateStart": "2018-01",
@@ -273,7 +277,13 @@
         "skl-javascript",
         "skl-vuejs",
         "skl-aws-s3",
-        "skl-docker"
+        "skl-docker",
+        "skl-eloquent",
+        "skl-digital-ocean",
+        "skl-nginx",
+        "skl-git",
+        "skl-html5",
+        "skl-css3"
       ],
       "metadata": {
         "dateStart": "2019-03",
@@ -347,7 +357,8 @@
       "tags": [
         "python",
         "etl",
-        "data-engineering"
+        "data-engineering",
+        "microservices"
       ],
       "relatedSkills": [
         "skl-python",
@@ -365,7 +376,13 @@
         "skl-pandas",
         "skl-dask",
         "skl-spark",
-        "skl-numpy"
+        "skl-numpy",
+        "skl-scikit-learn",
+        "skl-jenkins",
+        "skl-git",
+        "skl-nose",
+        "skl-microservices",
+        "skl-rest-api"
       ],
       "metadata": {
         "dateStart": "2021-10",
@@ -464,7 +481,9 @@
         "python",
         "backend",
         "api-design",
-        "clean-architecture"
+        "clean-architecture",
+        "kafka",
+        "microservices"
       ],
       "relatedSkills": [
         "skl-python",
@@ -478,7 +497,13 @@
         "skl-aws-rds",
         "skl-docker",
         "skl-kubernetes",
-        "skl-pytest"
+        "skl-pytest",
+        "skl-git",
+        "skl-kafka",
+        "skl-hexagonal-architecture",
+        "skl-event-driven",
+        "skl-microservices",
+        "skl-rest-api"
       ],
       "metadata": {
         "dateStart": "2023-01",
@@ -585,7 +610,9 @@
         "skl-aws-s3",
         "skl-aws-rds",
         "skl-aws-beanstalk",
-        "skl-docker"
+        "skl-docker",
+        "skl-eloquent",
+        "skl-git"
       ],
       "metadata": {
         "dateStart": "2021-05",
@@ -687,11 +714,17 @@
         "skl-aws-sns",
         "skl-nats",
         "skl-docker",
-        "skl-pytest"
+        "skl-pytest",
+        "skl-scikit-learn",
+        "skl-aws-aurora",
+        "skl-gitlab-ci",
+        "skl-git",
+        "skl-microservices",
+        "skl-rest-api"
       ],
       "metadata": {
         "dateStart": "2023-10",
-        "dateEnd": null
+        "dateEnd": "2026-07"
       },
       "languages": {
         "en": {
@@ -792,7 +825,11 @@
         "skl-javascript",
         "skl-vuejs",
         "skl-aws-s3",
-        "skl-docker"
+        "skl-docker",
+        "skl-eloquent",
+        "skl-html5",
+        "skl-css3",
+        "skl-git"
       ],
       "metadata": {
         "dateStart": "2018-09",
@@ -857,7 +894,11 @@
         "skl-javascript",
         "skl-vuejs",
         "skl-mongodb",
-        "skl-aws-s3"
+        "skl-aws-s3",
+        "skl-html5",
+        "skl-css3",
+        "skl-aws-ec2",
+        "skl-firebase"
       ],
       "metadata": {
         "dateStart": "2020-03",
@@ -922,7 +963,10 @@
         "skl-python",
         "skl-pytorch",
         "skl-opencv",
-        "skl-docker"
+        "skl-docker",
+        "skl-webrtc",
+        "skl-cpp",
+        "skl-angularjs"
       ],
       "metadata": {
         "dateStart": "2020-05",
@@ -995,19 +1039,18 @@
         "portfolio"
       ],
       "tags": [
-        "fastapi",
+        "django",
         "rest-api",
         "clean-code",
         "pytest"
       ],
       "relatedSkills": [
         "skl-python",
-        "skl-fastapi",
+        "skl-django",
         "skl-postgresql",
         "skl-docker",
         "skl-pytest"
       ],
-      "urlGitHub": "https://github.com/jordanlazo/eventnow",
       "metadata": {
         "status": "Completed",
         "dateStart": "2025-07",
@@ -1021,11 +1064,11 @@
           "detailedContent": {
             "context": "Academic Project (University of Queensland)",
             "challenge": "Users needed a centralized, highly performant API to query, filter, and discover upcoming local events in real-time using complex and dynamic search parameters.",
-            "solution": "I developed a comprehensive set of RESTful APIs heavily focused on fast data retrieval, robust filtering logic, and clean code principles. Leveraging FastAPI's native asynchronous support, the system efficiently handles concurrent I/O operations without blocking. The architecture strictly separates business logic from data access, enforcing strict data validation schemas."
+            "solution": "I developed a comprehensive set of RESTful APIs heavily focused on fast data retrieval, robust filtering logic, and clean code principles. Leveraging Django's robust framework capabilities and database queries, the system efficiently handles data interactions. The architecture strictly separates business logic from data access, enforcing strict data validation schemas."
           },
           "resumeBullets": [
             {
-              "text": "Engineered a highly performant RESTful API discovery engine using FastAPI and async database drivers, managing 1k+ concurrent local event queries/sec.",
+              "text": "Engineered a highly performant RESTful API discovery engine using Django and optimized database queries, managing 1k+ concurrent local event queries/sec.",
               "categories": [
                 "backend"
               ]
@@ -1047,15 +1090,15 @@
         "es": {
           "title": "EventNow",
           "role": "Desarrollador Backend",
-          "shortDescription": "Una plataforma escalable de descubrimiento de eventos en tiempo real muy centrada en código limpio y rendimiento de APIs.",
+          "shortDescription": "Una plataforma de descubrimiento de eventos en tiempo real escalable y muy centrada en código limpio y rendimiento de APIs.",
           "detailedContent": {
             "context": "Proyecto Académico (University of Queensland)",
             "challenge": "Los usuarios necesitaban una API centralizada y altamente eficiente para consultar, filtrar y descubrir próximos eventos locales en tiempo real utilizando parámetros de búsqueda complejos y dinámicos.",
-            "solution": "Desarrollé un conjunto completo de APIs RESTful fuertemente enfocadas en la recuperación rápida de datos, lógica de filtrado robusta y principios de código limpio. Aprovechando el soporte asíncrono nativo de FastAPI, el sistema maneja eficientemente operaciones de E/S concurrentes sin bloquearse. La arquitectura separa estrictamente la lógica de negocio del acceso a datos, aplicando esquemas estrictos de validación de datos."
+            "solution": "Desarrollé un conjunto completo de APIs RESTful fuertemente enfocadas en la recuperación rápida de datos, lógica de filtrado robusta y principios de código limpio. Aprovechando las robustas capacidades del framework Django y las consultas de bases de datos, el sistema maneja eficientemente las interacciones de datos. La arquitectura separa estrictamente la lógica de negocio del acceso a datos, aplicando esquemas estrictos de validación de datos."
           },
           "resumeBullets": [
             {
-              "text": "Diseñó un motor de API RESTful de alto rendimiento utilizando FastAPI y controladores de base de datos asíncronos, gestionando más de 1000 consultas concurrentes de eventos locales/seg.",
+              "text": "Diseñó un motor de API RESTful de alto rendimiento utilizando Django y consultas de bases de datos optimizadas, gestionando más de 1000 consultas concurrentes de eventos locales/seg.",
               "categories": [
                 "backend"
               ]
@@ -1522,6 +1565,20 @@
       "icon": "logos:aws"
     },
     {
+      "id": "skl-jquery",
+      "name": "jQuery",
+      "category": "framework",
+      "importance": "secondary",
+      "keywords": [
+        "jQuery Library",
+        "jQuery JS",
+        "jQuery DOM scripting"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "advanced",
+      "icon": "logos:jquery"
+    },
+    {
       "id": "skl-langchain",
       "name": "LangChain",
       "category": "framework",
@@ -1634,6 +1691,21 @@
       "url": "https://unity.com"
     },
     {
+      "id": "skl-hexagonal-architecture",
+      "name": "Hexagonal Architecture",
+      "category": "architecture_pattern",
+      "importance": "core",
+      "keywords": [
+        "Hexagonal Architecture",
+        "Ports and Adapters",
+        "Clean Architecture",
+        "Domain-Driven Design"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "expert",
+      "icon": "logos:python"
+    },
+    {
       "id": "skl-aws-s3",
       "name": "AWS S3",
       "category": "cloud",
@@ -1651,6 +1723,36 @@
       "url": "https://aws.amazon.com/s3/"
     },
     {
+      "id": "skl-git",
+      "name": "Git",
+      "category": "tool",
+      "importance": "core",
+      "keywords": [
+        "Git Version Control",
+        "GitHub",
+        "GitLab",
+        "Version Control System"
+      ],
+      "yearsExperience": 6,
+      "proficiency": "expert",
+      "icon": "logos:git-icon"
+    },
+    {
+      "id": "skl-event-driven",
+      "name": "Event-Driven Architecture",
+      "category": "architecture_pattern",
+      "importance": "core",
+      "keywords": [
+        "Event-driven Architecture",
+        "EDA",
+        "Event Sourcing",
+        "Asynchronous Events"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "expert",
+      "icon": "logos:aws"
+    },
+    {
       "id": "skl-aws-rds",
       "name": "AWS RDS",
       "category": "cloud",
@@ -1663,6 +1765,34 @@
       "yearsExperience": 4,
       "proficiency": "expert",
       "icon": "logos:aws-rds"
+    },
+    {
+      "id": "skl-jenkins",
+      "name": "Jenkins",
+      "category": "tool",
+      "importance": "core",
+      "keywords": [
+        "Jenkins CI",
+        "Jenkins CI/CD",
+        "Jenkins Automation"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:jenkins"
+    },
+    {
+      "id": "skl-html5",
+      "name": "HTML5",
+      "category": "tool",
+      "importance": "secondary",
+      "keywords": [
+        "HTML5 Web Markup",
+        "HTML Markup",
+        "Hypertext Markup Language"
+      ],
+      "yearsExperience": 6,
+      "proficiency": "expert",
+      "icon": "logos:html-5"
     },
     {
       "id": "skl-cockroachdb",
@@ -1678,6 +1808,121 @@
       "yearsExperience": 1,
       "proficiency": "intermediate",
       "icon": "logos:cockroachdb"
+    },
+    {
+      "id": "skl-rest-api",
+      "name": "RESTful APIs",
+      "category": "architecture_pattern",
+      "importance": "core",
+      "keywords": [
+        "RESTful API",
+        "REST APIs",
+        "Web API Design",
+        "HTTP services"
+      ],
+      "yearsExperience": 6,
+      "proficiency": "expert",
+      "icon": "logos:fastapi"
+    },
+    {
+      "id": "skl-nginx",
+      "name": "NGINX",
+      "category": "tool",
+      "importance": "core",
+      "keywords": [
+        "NGINX Reverse Proxy",
+        "NGINX Web Server",
+        "Load Balancer"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "advanced",
+      "icon": "logos:nginx"
+    },
+    {
+      "id": "skl-scikit-learn",
+      "name": "Scikit-Learn",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "Scikit-learn",
+        "sklearn",
+        "Machine Learning Library",
+        "scikit learn"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "advanced",
+      "icon": "logos:scikit-learn"
+    },
+    {
+      "id": "skl-cpp",
+      "name": "C++",
+      "category": "programming_language",
+      "importance": "secondary",
+      "keywords": [
+        "C++ Programming",
+        "CPP",
+        "Cplusplus"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "intermediate",
+      "icon": "logos:c-plusplus"
+    },
+    {
+      "id": "skl-django",
+      "name": "Django",
+      "category": "framework",
+      "importance": "core",
+      "keywords": [
+        "Django Framework",
+        "Django ORM",
+        "Python Django"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:django"
+    },
+    {
+      "id": "skl-aws-aurora",
+      "name": "AWS Aurora",
+      "category": "cloud",
+      "importance": "core",
+      "keywords": [
+        "Amazon Aurora",
+        "AWS Aurora Database",
+        "Aurora Postgres",
+        "Aurora MySQL"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:aws"
+    },
+    {
+      "id": "skl-webrtc",
+      "name": "WebRTC",
+      "category": "tool",
+      "importance": "secondary",
+      "keywords": [
+        "Web Real-Time Communication",
+        "WebRTC Video",
+        "Real-Time Streaming"
+      ],
+      "yearsExperience": 2,
+      "proficiency": "intermediate",
+      "icon": "logos:webrtc"
+    },
+    {
+      "id": "skl-gitlab-ci",
+      "name": "GitLab CI/CD",
+      "category": "tool",
+      "importance": "secondary",
+      "keywords": [
+        "GitLab CI",
+        "GitLab CD",
+        "CI/CD Pipeline"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:gitlab"
     },
     {
       "id": "skl-aws-sns",
@@ -1719,6 +1964,35 @@
       "url": "https://vuejs.org"
     },
     {
+      "id": "skl-microservices",
+      "name": "Microservices",
+      "category": "architecture_pattern",
+      "importance": "core",
+      "keywords": [
+        "Microservices Architecture",
+        "Distributed Systems",
+        "SOA",
+        "Service-Oriented Architecture"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "expert",
+      "icon": "logos:docker-icon"
+    },
+    {
+      "id": "skl-angularjs",
+      "name": "AngularJS",
+      "category": "framework",
+      "importance": "secondary",
+      "keywords": [
+        "AngularJS Framework",
+        "Angular 1.x",
+        "Angular JS"
+      ],
+      "yearsExperience": 2,
+      "proficiency": "intermediate",
+      "icon": "logos:angular-icon"
+    },
+    {
       "id": "skl-sqlalchemy",
       "name": "SQLAlchemy",
       "category": "framework",
@@ -1747,6 +2021,20 @@
       "proficiency": "expert",
       "icon": "logos:fastapi",
       "url": "https://fastapi.tiangolo.com"
+    },
+    {
+      "id": "skl-css3",
+      "name": "CSS3",
+      "category": "tool",
+      "importance": "secondary",
+      "keywords": [
+        "CSS3 Styling",
+        "Cascading Style Sheets",
+        "CSS stylesheets"
+      ],
+      "yearsExperience": 6,
+      "proficiency": "expert",
+      "icon": "logos:css-3"
     },
     {
       "id": "skl-asyncio",
@@ -1793,6 +2081,20 @@
       "proficiency": "advanced",
       "icon": "logos:aws-sqs",
       "url": "https://aws.amazon.com/sqs/"
+    },
+    {
+      "id": "skl-nose",
+      "name": "Nose",
+      "category": "tool",
+      "importance": "secondary",
+      "keywords": [
+        "Nose Testing Framework",
+        "nosetests",
+        "Python Nose"
+      ],
+      "yearsExperience": 2,
+      "proficiency": "advanced",
+      "icon": "logos:python"
     },
     {
       "id": "skl-redis",
@@ -1893,6 +2195,20 @@
       "url": "https://flask.palletsprojects.com"
     },
     {
+      "id": "skl-eloquent",
+      "name": "Eloquent ORM",
+      "category": "framework",
+      "importance": "secondary",
+      "keywords": [
+        "Eloquent ORM",
+        "Laravel Eloquent",
+        "PHP ORM"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:laravel"
+    },
+    {
       "id": "skl-aws-lambda",
       "name": "AWS Lambda",
       "category": "cloud",
@@ -1977,6 +2293,35 @@
       "icon": "logos:postgis"
     },
     {
+      "id": "skl-firebase",
+      "name": "Firebase",
+      "category": "cloud",
+      "importance": "secondary",
+      "keywords": [
+        "Google Firebase",
+        "Firebase DB",
+        "Firebase Auth"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:firebase"
+    },
+    {
+      "id": "skl-kafka",
+      "name": "Apache Kafka",
+      "category": "tool",
+      "importance": "core",
+      "keywords": [
+        "Apache Kafka",
+        "Kafka Streams",
+        "Message Broker",
+        "Event Streaming"
+      ],
+      "yearsExperience": 2,
+      "proficiency": "advanced",
+      "icon": "logos:kafka"
+    },
+    {
       "id": "skl-php",
       "name": "PHP",
       "category": "programming_language",
@@ -2001,6 +2346,20 @@
       "url": "https://www.docker.com"
     },
     {
+      "id": "skl-digital-ocean",
+      "name": "DigitalOcean",
+      "category": "cloud",
+      "importance": "core",
+      "keywords": [
+        "Digital Ocean",
+        "DigitalOcean Droplets",
+        "DO Cloud"
+      ],
+      "yearsExperience": 3,
+      "proficiency": "advanced",
+      "icon": "logos:digitalocean"
+    },
+    {
       "id": "skl-mongodb",
       "name": "MongoDB",
       "category": "database",
@@ -2015,6 +2374,21 @@
       "proficiency": "advanced",
       "icon": "logos:mongodb",
       "url": "https://www.mongodb.com"
+    },
+    {
+      "id": "skl-aws-ec2",
+      "name": "AWS EC2",
+      "category": "cloud",
+      "importance": "core",
+      "keywords": [
+        "Amazon EC2",
+        "Elastic Compute Cloud",
+        "AWS Virtual Machine",
+        "EC2 Instances"
+      ],
+      "yearsExperience": 4,
+      "proficiency": "expert",
+      "icon": "logos:aws-ec2"
     },
     {
       "id": "skl-laravel",
