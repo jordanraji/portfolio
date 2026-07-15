@@ -1,25 +1,25 @@
 ---
 // src/components/Skills.astro
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
 
 export interface Props {
-  entries: CollectionEntry<'skills'>[];
+	entries: CollectionEntry<"skills">[];
 }
 const { entries } = Astro.props;
 
 const labels: Record<string, string> = {
-  programming_language: 'Languages',
-  framework: 'Frameworks',
-  database: 'Databases',
-  tool: 'Tools',
-  cloud: 'Cloud & Infra',
+	programming_language: "Languages",
+	framework: "Frameworks",
+	database: "Databases",
+	tool: "Tools",
+	cloud: "Cloud & Infra",
 };
 
 const grouped = entries.reduce<Record<string, string[]>>((acc, s) => {
-  const key = s.data.category;
-  acc[key] = acc[key] ?? [];
-  acc[key].push(s.data.name);
-  return acc;
+	const key = s.data.category;
+	acc[key] = acc[key] ?? [];
+	acc[key].push(s.data.name);
+	return acc;
 }, {});
 ---
 <section id="skills">

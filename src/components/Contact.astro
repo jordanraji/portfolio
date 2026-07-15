@@ -1,48 +1,63 @@
 ---
+import type { CollectionEntry } from "astro:content";
 // src/components/Contact.astro
-import { getEntry } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
+import { getEntry } from "astro:content";
 
 export interface Props {
-  profile: {
-    name: string;
-    title: string;
-    contact: { email: string; github: string; linkedin: string; location: string };
-    education: { institution: string; degree: string; dateStart: string; dateEnd: string }[];
-  };
-  experiences: CollectionEntry<'experiences'>[];
-  projects: CollectionEntry<'projects'>[];
-  skills: CollectionEntry<'skills'>[];
+	profile: {
+		name: string;
+		title: string;
+		contact: {
+			email: string;
+			github: string;
+			linkedin: string;
+			location: string;
+		};
+		education: {
+			institution: string;
+			degree: string;
+			dateStart: string;
+			dateEnd: string;
+		}[];
+	};
+	experiences: CollectionEntry<"experiences">[];
+	projects: CollectionEntry<"projects">[];
+	skills: CollectionEntry<"skills">[];
 }
 const { profile, experiences, projects, skills } = Astro.props;
 
 const expLines = await Promise.all(
-  experiences.map(async (exp) => {
-    const company = await getEntry(exp.data.companyId);
-    return `- ${exp.data.metadata.dateStart} to ${exp.data.metadata.dateEnd ?? 'present'}: ${exp.data.languages.en.role} @ ${company?.data.name ?? ''}`;
-  })
+	experiences.map(async (exp) => {
+		const company = await getEntry(exp.data.companyId);
+		return `- ${exp.data.metadata.dateStart} to ${exp.data.metadata.dateEnd ?? "present"}: ${exp.data.languages.en.role} @ ${company?.data.name ?? ""}`;
+	}),
 );
 
 const projLines = projects.map(
-  (p) => `- ${p.id.replace('prj-', '')}: ${p.data.languages.en.title} — ${p.data.languages.en.shortDescription}`
+	(p) =>
+		`- ${p.id.replace("prj-", "")}: ${p.data.languages.en.title} — ${p.data.languages.en.shortDescription}`,
 );
 
 const skillsByCategory = skills.reduce<Record<string, string[]>>((acc, s) => {
-  acc[s.data.category] = acc[s.data.category] ?? [];
-  acc[s.data.category].push(s.data.name);
-  return acc;
+	acc[s.data.category] = acc[s.data.category] ?? [];
+	acc[s.data.category].push(s.data.name);
+	return acc;
 }, {});
-const skillLines = Object.entries(skillsByCategory).map(([cat, names]) => `[${cat}] ${names.join(', ')}`);
+const skillLines = Object.entries(skillsByCategory).map(
+	([cat, names]) => `[${cat}] ${names.join(", ")}`,
+);
 
-const eduLines = profile.education.map((ed) => `- ${ed.degree}, ${ed.institution} (${ed.dateStart}–${ed.dateEnd})`);
+const eduLines = profile.education.map(
+	(ed) => `- ${ed.degree}, ${ed.institution} (${ed.dateStart}–${ed.dateEnd})`,
+);
 
 const commands = {
-  about: `${profile.name} — ${profile.title}\nLocation: ${profile.contact.location}`,
-  skills: skillLines.join('\n'),
-  education: eduLines.join('\n'),
-  experience: `Log Entries:\n${expLines.join('\n')}`,
-  projects: `Git Repositories:\n${projLines.join('\n')}`,
-  contact: `email - ${profile.contact.email}\ngithub - ${profile.contact.github}\nlinkedin - ${profile.contact.linkedin}\nlocation - ${profile.contact.location}`,
+	about: `${profile.name} — ${profile.title}\nLocation: ${profile.contact.location}`,
+	skills: skillLines.join("\n"),
+	education: eduLines.join("\n"),
+	experience: `Log Entries:\n${expLines.join("\n")}`,
+	projects: `Git Repositories:\n${projLines.join("\n")}`,
+	contact: `email - ${profile.contact.email}\ngithub - ${profile.contact.github}\nlinkedin - ${profile.contact.linkedin}\nlocation - ${profile.contact.location}`,
 };
 const commandsJson = JSON.stringify(commands);
 ---

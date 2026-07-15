@@ -1,12 +1,14 @@
 ---
 // src/components/Research.astro
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
 
 export interface Props {
-  entries: CollectionEntry<'publications'>[];
+	entries: CollectionEntry<"publications">[];
 }
 const { entries } = Astro.props;
-const sorted = [...entries].sort((a, b) => (b.data.date + 'Z').localeCompare(a.data.date + 'Z'));
+const sorted = [...entries].sort((a, b) =>
+	`${b.data.date}Z`.localeCompare(`${a.data.date}Z`),
+);
 ---
 <section id="research">
   <div class="sec-head">

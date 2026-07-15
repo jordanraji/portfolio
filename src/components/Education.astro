@@ -1,7 +1,13 @@
 ---
 // src/components/Education.astro
 export interface Props {
-  education: { institution: string; degree: string; location: string; dateStart: string; dateEnd: string }[];
+	education: {
+		institution: string;
+		degree: string;
+		location: string;
+		dateStart: string;
+		dateEnd: string;
+	}[];
 }
 const { education } = Astro.props;
 ---

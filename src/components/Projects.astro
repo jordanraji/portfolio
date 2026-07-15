@@ -1,25 +1,27 @@
 ---
+import type { CollectionEntry } from "astro:content";
 // src/components/Projects.astro
-import { getEntry } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
+import { getEntry } from "astro:content";
 
 export interface Props {
-  entries: CollectionEntry<'projects'>[];
+	entries: CollectionEntry<"projects">[];
 }
 const { entries } = Astro.props;
 
 const rows = await Promise.all(
-  entries.map(async (p) => {
-    const skills = await Promise.all(p.data.relatedSkills.map((s) => getEntry(s)));
-    return {
-      id: p.id,
-      title: p.data.languages.en.title,
-      description: p.data.languages.en.shortDescription,
-      github: p.data.urlGitHub,
-      dateStart: p.data.metadata.dateStart,
-      skills: skills.map((s) => s.data.name).slice(0, 4),
-    };
-  })
+	entries.map(async (p) => {
+		const skills = await Promise.all(
+			p.data.relatedSkills.map((s) => getEntry(s)),
+		);
+		return {
+			id: p.id,
+			title: p.data.languages.en.title,
+			description: p.data.languages.en.shortDescription,
+			github: p.data.urlGitHub,
+			dateStart: p.data.metadata.dateStart,
+			skills: skills.map((s) => s.data.name).slice(0, 4),
+		};
+	}),
 );
 ---
 <section id="projects">

@@ -1,34 +1,38 @@
 ---
-import { getCollection } from 'astro:content';
-import Base from '../layouts/Base.astro';
-import Hero from '../components/Hero.astro';
-import About from '../components/About.astro';
-import Education from '../components/Education.astro';
-import Experience from '../components/Experience.astro';
-import Projects from '../components/Projects.astro';
-import Skills from '../components/Skills.astro';
-import Research from '../components/Research.astro';
-import Contact from '../components/Contact.astro';
-import career from '../data/career.raw.json';
+import { getCollection } from "astro:content";
+import About from "../components/About.astro";
+import Contact from "../components/Contact.astro";
+import Education from "../components/Education.astro";
+import Experience from "../components/Experience.astro";
+import Hero from "../components/Hero.astro";
+import Projects from "../components/Projects.astro";
+import Research from "../components/Research.astro";
+import Skills from "../components/Skills.astro";
+import career from "../data/career.raw.json";
+import Base from "../layouts/Base.astro";
 
-const experiences = await getCollection('experiences');
-const projects = await getCollection('projects');
-const skills = await getCollection('skills');
-const publications = await getCollection('publications');
+const experiences = await getCollection("experiences");
+const projects = await getCollection("projects");
+const skills = await getCollection("skills");
+const publications = await getCollection("publications");
 const { profile } = career;
 
 // Sort education, experiences, projects and publications descending by date
 const education = [...profile.education].sort((a, b) =>
-  (b.dateStart + 'Z').localeCompare(a.dateStart + 'Z')
+	`${b.dateStart}Z`.localeCompare(`${a.dateStart}Z`),
 );
 const sortedExperiences = [...experiences].sort((a, b) =>
-  (b.data.metadata.dateStart + 'Z').localeCompare(a.data.metadata.dateStart + 'Z')
+	`${b.data.metadata.dateStart}Z`.localeCompare(
+		`${a.data.metadata.dateStart}Z`,
+	),
 );
 const sortedProjects = [...projects].sort((a, b) =>
-  (b.data.metadata.dateStart + 'Z').localeCompare(a.data.metadata.dateStart + 'Z')
+	`${b.data.metadata.dateStart}Z`.localeCompare(
+		`${a.data.metadata.dateStart}Z`,
+	),
 );
 const sortedPublications = [...publications].sort((a, b) =>
-  (b.data.date + 'Z').localeCompare(a.data.date + 'Z')
+	`${b.data.date}Z`.localeCompare(`${a.data.date}Z`),
 );
 ---
 <Base title={`${profile.name} — ${profile.title}`}>
